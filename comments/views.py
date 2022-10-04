@@ -1,7 +1,7 @@
 from rest_framework import generics, permissions
 from drf_api.permissions import IsOwnerOrReadOnly
-from .models import Comment
-from .serializers import CommentSerializer, CommentDetailSerializer
+from comments.models import Comment
+from comments.serializer import CommentSerializer, CommentDetailSerializer
 
 
 class CommentList(generics.ListCreateAPIView):
